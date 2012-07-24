@@ -1,0 +1,292 @@
+/**
+ * Color scheme: http://www.colourlovers.com/palette/468125/Mayo
+ */
+
+/* ==DEFAULTS */
+* {
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:#599DD1;
+	text-decoration:none;
+}
+
+a:hover, a:focus {
+	color:#38678B;
+	text-decoration:underline;
+}
+
+/* ==HEADER */
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+header #site a, header #owner a{
+	display: block;
+	padding: 5px 10px;
+}
+
+header #owner {
+	float: right;
+}
+
+header #owner a , header #site a {
+	font-size: 140%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+header #owner a {
+	background: #D80018;
+	-moz-border-radius-bottomleft: 5px;
+	border-right-color: #D80018;
+}
+
+header #owner a:hover, header #owner a:focus, header #owner a:active {
+	background: #8C0010 url('../images/home.gif') no-repeat 7px 7px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+header #site {
+	float: left;
+}
+
+header #site a {
+	background: #0060C0;
+	-moz-border-radius-bottomright: 5px;
+	border-left-color: #0060C0;
+}
+
+header #site a:hover, header #site a:focus, header #site a:active {
+	background: #003F7D url('../images/potion_green_16.png') no-repeat 87px 7px;
+	padding-right: 30px;
+	// Use "lab" icon here
+	text-decoration: none;
+}
+
+/* nav */
+header nav {
+}
+header nav ol {
+	float: left;
+	clear: both;
+	font-size: 110%;
+}
+
+header nav ol li a {
+	display: block;
+	color: #333333;
+	border-left: 5px solid #FFFFFF;
+	line-height: 1.2em;
+	min-width: 100px;
+	padding-left: 5px;
+	float: left;
+}
+
+header nav ol li ol li a {
+	border-width: 15px;
+	font-size: 90%;
+}
+
+header nav ol li.parent.active > a {
+	border-color: #00A811;
+	color: #00A811;
+}
+
+header nav ol li.active.current > a {
+	border-color: #00A811;
+	background: #00A811 url('../images/hover.gif') no-repeat 95% 50%;
+	color: #FFFFFF !important;
+	font-weight: bold;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+}
+
+header nav ol li a:hover {
+	border-color: #006D0D !important;
+	background: #006D0D url('../images/active.gif') no-repeat 95% 50% !important;
+	color: #FFFFFF !important;
+	text-decoration: none;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+}
+
+/* =PRIMARY */
+#primary {
+	margin-top: 8em;
+	width:75%;
+	margin: 0 auto;
+	min-width:750px;
+	max-width:1000px;
+}
+
+/* ==Page Header */
+#primary h1#page {
+	margin-top: 1em;
+	font-size:300%;
+	text-align:center;
+	font-family:Georgia;
+	text-transform:uppercase;
+	border-bottom:3px solid #1693A7;
+	margin-bottom:20px;
+}
+
+body.lemnos #primary h1#page {
+	background: url('../images/potion_green_32.png') no-repeat 1% 50%;
+}
+
+/* =CONTENT */
+#content, #content p.download a, #content ol.forum li a {
+	color: #111111;
+}
+
+#content p, #content h1, #content h2, #content pre, #content ol, #content ul {
+	margin: 10px;
+}
+
+#content em {
+	font-style: italic;
+}
+
+#content strong {
+	font-weight: bold;
+}
+
+#content q:before {
+  content: open-quote;
+}
+
+#content q:after {
+  content: close-quote;
+}
+
+#content strong.warning {
+	font-weight: normal;
+	color: #D80018;
+}
+
+/* ==CODE */
+#content pre {
+	padding: 5px 10px;
+	background: #F4F3D8;
+}
+
+/* ==CHANGELOG */
+#content ol.changelog {
+	background:#FFF6BF;
+	color:#333333;
+	border:2px solid #FFF932;
+	padding:10px 10px;
+	list-style:none;
+}
+#content ol.changelog li h3 {
+	font-size:120%;
+	text-style:italic;
+	color:#A45036;
+	margin:0 !important;
+	border-bottom:1px solid #A45036;
+}
+#content ol.changelog li ul {
+	list-style:none;
+	margin: 5px 0;
+}
+#content ol.changelog li ul li {
+	padding-left:30px;
+}
+#content ol.changelog li ul li.feature {
+	background:url('../images/cog_add.png') no-repeat left center;
+}
+#content ol.changelog li ul li.bugfix {
+	background:url('../images/bug_delete.png') no-repeat left center;
+}
+/* ==DOWNLOAD */
+#content p.download a {
+	display: block;
+	background: #C7E8B9 url('../images/package.png') no-repeat 1% 50%;
+	padding: 5px 5px 5px 40px;
+	border: 2px solid #1A6906;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+#content p.download a:hover, #content p.download a:focus {
+	background-color: #35D348;
+}
+
+/* ==HEADINGS */
+#content h1, #content h2, #content h3, #content h4 {
+	font-family: Georgia;
+}
+#content h1 {
+	font-size: 140%;
+	font-weight: bold;
+	color: #00A811;
+	margin-top: 20px;
+}
+
+#content h2 {
+	font-size: 130%;
+	margin-top: 15px;
+}
+
+/* =FORUM */
+#content ol.forum {
+	font-size: 90%;
+}
+#content ol.forum li a {
+	display: block;
+	border: 1px solid #CCCCCC;
+	background: #EBEEF3;
+	padding: 5px;
+}
+#content ol.forum li a:hover, #content ol.forum li a:focus {
+	text-decoration: none;
+	background: #6D84B4;
+	color: #FFFFFF;
+}
+#content ol.forum li a .date {
+	float: right;
+}
+#content ol.forum li a h3 {
+	font-size: 110%;
+	color: #3B5998;
+	font-weight: bold;
+}
+#content ol.forum li a:hover h3, #content ol.forum li a:focus h3 {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+#content ol.forum li a p {
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+#content ol.forum li.more a, #content ol.forum li.new a {
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+#content ol.forum li.more a {
+	background-image: url('../images/table_go.png');
+}
+#content ol.forum li.new a {
+	background-image: url('../images/add.png');
+}
+
+/* =HOMEPAGE */
+ol.projects li a {
+	display: block;
+	padding: 2px 2px 2px 20px;
+	position: relative;
+	left: -20px;
+	background: no-repeat left center;
+}
+
+ol.projects li.new a {
+	background-image: url('../images/new.png');
+	color: #D80018;
+}
