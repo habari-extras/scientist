@@ -37,7 +37,7 @@ class Scientist extends Theme
 				$title = $theme->post->title;
 				break;
 			default:
-				$title = '';
+				$title = 'Home';
 				$break;
 		}
 		
