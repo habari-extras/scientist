@@ -5,6 +5,7 @@ class Scientist extends Theme
 	
 	public function action_init_theme()
 	{
+		// $this->add_template('project.github', dirname(__FILE__) . '/project.github.php');
 		
 		Stack::add( 'template_stylesheet', array( 'http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css', 'screen, print' ), 'reset');
 		
