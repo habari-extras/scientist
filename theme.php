@@ -42,7 +42,7 @@ class Scientist extends Theme
 				$break;
 		}
 		
-		
+		$theme->page_title = $title;
 		$theme->title = Options::get( 'title' ) . ' &raquo; ' . $title;
 		
 		$theme->owner = array(
