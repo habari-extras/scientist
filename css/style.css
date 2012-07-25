@@ -216,6 +216,12 @@ body.lemnos #primary h1#page {
 	background-color: #35D348;
 }
 
+/* ==SCREENSHOTS */
+#screenshots img {
+	margin-left: 10px;
+	border: 2px solid #1A6906;
+}
+
 /* ==HEADINGS */
 #content h1, #content h2, #content h3, #content h4 {
 	font-family: Georgia;
