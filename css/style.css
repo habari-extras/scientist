@@ -125,6 +125,11 @@ body.lemnos #primary h1#page {
 	margin: 10px;
 }
 
+#content ul li {
+	margin-left: 20px;
+	list-style:	circle;
+}
+
 #content em {
 	font-style: italic;
 }
