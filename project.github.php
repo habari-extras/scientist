@@ -1,4 +1,3 @@
-<?php $theme->display('header'); ?>
 <div id="content">
 
 		<?php if( $post->project->platform == 'habari' ): ?><p class="intro"><?php echo $post->title; ?> is a <?php echo $post->project->type; ?> developed for the <a href="http://habariproject.org">Habari</a> blogging platform and released under the <a href="<?php echo $post->project->license['url']; ?>" rel="license"><?php echo $post->project->license['name']; ?></a>.</span></p><?php endif; ?>
@@ -69,4 +68,3 @@
 		<h1>Support</h1>
 		<p>If you have any issue or suggestion concerning this project, please <a href="<?php echo $post->project->new_issue_url; ?>">open an issue</a> on GitHub.</p>
 </div>
-<?php $theme->display('footer'); ?>

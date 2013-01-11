@@ -54,6 +54,7 @@ header #site a, header #owner a{
 
 header #owner {
 	float: right;
+	display: none;
 }
 
 header #owner a , header #site a {
@@ -252,6 +253,60 @@ body.lemnos #primary h1#page {
 #content h2 {
 	font-size: 130%;
 	margin-top: 15px;
+}
+
+/* =RIBBONS */
+#ribbon-internal {
+	font: bold 20px Sans-Serif;
+	color: #333;
+	text-align: center;
+	text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-ms-transform:     rotate(45deg);
+	-o-transform:      rotate(45deg);
+	position: absolute;
+	right: -45px;
+	top: 35px;
+	padding: 7px 0;
+	width: 200px;
+	background-color: #BFDC7A;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+	background-image: -webkit-linear-gradient(top, #BFDC7A, #EC3B50); 
+	background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+	background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+	background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45);
+	color: #6a6340;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+#ribbon-internal:before, #ribbon-internal:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+#ribbon-internal:before {
+  left: 0;
+}
+#ribbon-internal:after {
+  right: 0;
+}
+
+#ribbon.abandoned #ribbon-internal
+{
+	background-color: #D80018;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D80018), to(#EC3B50)); 
+	background-image: -webkit-linear-gradient(top, #D80018, #EC3B50); 
+	background-image:    -moz-linear-gradient(top, #D80018, #EC3B50); 
+	background-image:     -ms-linear-gradient(top, #D80018, #EC3B50); 
+	background-image:      -o-linear-gradient(top, #D80018, #EC3B50);
+	color: #FFF;
 }
 
 /* =FORUM */
